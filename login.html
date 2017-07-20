@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Online Voting System...</title>
+<LINK rel="shortcut icon" type="image/x-icon" href="images/fevicon.ico">
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function dil(form)
+{
+  for(var i=0; i<3; i++)
+   {
+        if(!isNaN(form.elements[i].value))
+		{
+		   alert("This Field must be Char's")
+		   form.elements[i].value=""	
+		   form.elements[i].focus()
+		   return false
+		}
+   } 
+    if(document.F1.password.value!=document.F1.repassword.value)
+    {
+	   alert("Check Confirm PWD"); 
+	   document.F1.repassword.value=""
+	   document.F1.repassword.focus()	
+	   return false
+	}
+	
+	
+	if(!isNaN(document.F1.phone.value))
+   {
+	   if(document.F1.phone.value >9999999999 )
+	   {
+		 alert("ye kabhi nhi aayegi")
+		 document.F1.phone.value=""
+		 document.F1.phone.focus()
+         return false   
+	   }
+   }
+   else
+   {
+       alert("This  field  must  be  number")
+	   document.F1.phone.value=""
+	   return false
+   }
+	
+	
+	
+
+   if(!isNaN(document.F1.amount.value))
+   {
+	   if(document.F1.amount.value < 500)
+	   {
+		 alert("Minimum Balance should be 500 /-")
+		 document.F1.amount.value=""
+		 document.F1.amount.focus()
+         return false   
+	   }
+   }
+   else
+   {
+       alert("This  field  must  be  number")
+	   document.F1.amount.value=""
+	   return false
+   }
+   
+   
+
+   for(var i=0; i<form.elements.length; i++)
+   {
+		if(form.elements[i].value == "")
+		{
+		   alert("Fill out all Fields")
+		   document.F1.username.focus()
+		   return false
+		}
+   }
+
+   
+
+   return true   
+   }
+</script>
+
+</head>
+
+<body>
+
+<div id="top_links">
+  
+
+<div id="header">
+    <marquee  behavior="scroll" scrollamount="3"  onmouseover="this.stop();" onmouseout="this.start();"><img src="images/flag.gif" alt="business" width="70" height="50">
+	 </marquee>
+<!--
+	
+-->
+</div>
+
+<div id="navigation">
+    <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="login.html">LOGIN</a></li>	
+	<li><a href="new_voter.html">NEW VOTER</a></li>
+	<li><a href="apply.html">APPLY</a></li>
+	<li><a href="result.html">RESULTS</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="help.html">HELP</a></li>
+    </ul>
+</div>
+
+<table style="width:897px; background:#FFFFFF; margin:0 auto;"><tr align="justify">
+<td width="299" valign="top" style="border-right:#666666 1px dotted;">
+    	<div id="services"><h1></h1><br>
+		 <!--   <ul>
+        
+	-->
+	 <td width="1200" valign="top">
+    	<div id="welcome" style="border-right:#666666 1px dotted;"><h1>LOGIN</h1><br>
+    	    <table  align="center" bgcolor="white">
+		
+
+		
+                <tr><td><a href="voter_login.html"><img src="images/111.PNG" alt="Voter.."></img></a></td></tr><br><br>
+	        <tr><td><a href="voter_login.html"><img src="images/222.PNG" alt="Admin.."></img></a></td></tr><br><br>
+	
+	
+	</table>
+		<center><img src="images/Capture111.PNG" alt="voting site"  width="280" height="200"></center><br>
+    	   </div>      
+    </td>
+ <!--   
+    <td width="299" valign="top">
+    	<div id="welcome" style="border-right:#666666 1px dotted;"><h1>Welcome</h1><br>
+    	    <center><img src="images/globe_10.gif" alt="business" width="196" height="106"></center><br>
+		    <p>...................................................................................</p>
+	    	
+	    </div>      
+    </td>
+    -->
+    <td width="299" valign="top">
+   	  <div id="news"><h1></h1><br>
+      <!--	<div class="img"><img src="images/globe_12.gif" alt="Business"></div>
+        <h2>Oct. 10, 2016.</h2>
+        <p>...........................................................................................</p><br>
+        <div class="img"><img src="images/globe_16.gif" alt="Business"></div>
+        <h2>Mar. 11, 2017.</h2>
+        <p>State election for Uttar-pradesh..........................................................</p>
+      
+      </div>
+        	
+     </td>
+	 -->
+</tr></table>
+
+<div id="footer_top">
+  <div id="footer_navigation">
+  
+
+  </div>
+  
+  <div id="footer_copyright" >
+ 
+                    	<!--<center><img src="images/Capture111.PNG" alt="voting site"  width="300" height="200"></center><br> -->
+		    <p>..................................................................................................................................</p>
+	  
+  Copyright © delhi university</div>
+</div>
+
+<script type="text/javascript">
+document.onload = ctck();
+</script>
+</div>
+
+</body>
+</html>

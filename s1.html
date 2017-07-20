@@ -1,0 +1,38 @@
+<link href="s2.css" rel="stylesheet" type="text/css">
+<script>
+function myFunction() {
+    var coffee = document.forms[0];
+    var txt = "";
+    var i;
+    for (i = 0; i < coffee.length; i++) {
+        if (coffee[i].checked) {
+            txt = txt + coffee[i].value + " ";
+        }
+    }
+    document.getElementById("order").value = "You ordered a coffee with: " + txt;
+}
+</script>
+
+<form action="Vote" method="post">
+    <tr>
+        <td><input type="radio" class="big" name="party" value="party1"/><img src="images/aap.jpg" alt="aap..." height="150" width="100">
+     <input type="radio" class="big" name="party" value="party2"> <IMG src="images/bjp.jpg" alt="bjp..." height="100" width="105"> <br><br>
+   <input type="radio" class="big" name="party" value="party3">  <IMG src="images/bsp.png" alt="ff" height="100" width="105">  <br>	<br>
+    <input type="radio" class="big" name="party" value="party4">  <IMG src="images/congress.jpg" alt="d" height="100" width="105"> <br><br>
+        </td> </tr>  <input type="radio" class="big" name="party" value="party5"> <IMG src="images/cpi.png" alt="f" height="100" width="105">  <br><br>
+       <input type="radio" class="big" name="party" value="party6">  <IMG src="images/jdu.jpg" alt="v" height="100" width="105">  <br><br>   
+<input type="radio" class="big" name="party" value="party8"><IMG src="images/sp.gif" height="100" width="105"></img>  <br><br>
+ <input type="radio" class="big" name="party" value="party9"><IMG src="" height="100" width="105"></img>  <br>   <br>
+ <input type="button" onclick="myFunction()" value="Send order">
+  <br><br>
+  <input type="text" id="order" size="50">
+  <input type="submit" value="Submit">
+<center>sandeep
+<input type="reset" value="reset"></center>
+
+
+  	   <p>.................................................</p>
+  Copyright © delhi university</div>
+
+
+</form>
